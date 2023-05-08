@@ -1,0 +1,50 @@
+.head{
+    
+    background-image: url("../img/naslovna_3.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position:no-repeat ;
+    background-size: cover;
+}
+
+.logo{
+    margin-right: 20vw;
+}
+.cardSingl, .cardSingl img{
+    gap: 15px;
+    border-radius: 15%;
+    border-bottom: 10px solid orange;
+}
+.kolaSingl{
+    background-color: white;
+    width: 500px;
+    height: 500px;
+    border: 6px solid blue;
+    
+}
+.kolaSingl img{
+    width: 100%;
+    height: 240px;
+}
+.kola{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-image: url("../img/earth.jpg");
+    background-attachment:fixed ;
+    background-size:cover ;
+    background-position: no-repeat ;
+    opacity: 0.8;
+}
+input{
+    height: 35px;
+    width: 250px;
+    border: 1px double darkslateblue ;
+}
+@media only screen and(max-width:578px) {
+    .kolaSingl{
+        width: 350px;
+    }
+    
+}
