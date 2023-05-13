@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div >
+    <div class="container   ">
+        <div class="row m-5  ">
+            <div class="col-lg-6   col-1 ">
+
+
+            <form  action="#">
+                <label for="name">Ime i prezime</label><br>
+                <input type="text" id="name" name="name" placeholder="Nemanja Markovic"><br>
+                <label for="email">e-mail</label><br>
+                <input type="text" id="email" name="email" placeholder="NemanjaMark@gmail.com"><br>
+                <label for="od">Od vreme</label><br>
+                <input id="od" type="datetime" placeholder="9:00"><br>
+                <label for="Do">Do vreme</label><br>
+                <input id="Do" type="datetime" placeholder="18:00"><br><br>
+                <label for="od">Od datum</label><br>
+                <input id="od" type="datetime" placeholder="31 06 2023"><br>
+                <label for="Do">Do datum</label><br>
+                <input id="Do" type="datetime" placeholder="14 07 2023"><br>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Izaberite vozilo</option>
+                    <option value="1">Mazda CX-5</option>
+                    <option value="2">Wolcvagen Golf 6</option>
+                    <option value="3">Mazda CX-5</option>
+                    <option value="4">Reno Megan</option>
+                    <option value="5">Fiat Grandepunto</option>
+                  </select><br>
+                  <button class="btn btn-outline-info fw-bold">     <i class="bi bi-cart4"></i><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+                    <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                  </svg>  Rezervisi  
+                </button>
+                
+              </form></div>
+
+
+
+            <div class="col-lg-6   col-12 border-2">
+
+
+
+                <form  action="#">     
+                  
+                    <h4>Ukoliko niste sigurni koja kola Vam odgovaraju, <br> popunite upitnik dozvolite da Vam mi pomognemo</h4>
+                    
+
+
+
+
+                            <label for="model">Model:</label> <br>
+                            <input type="text" id="model" name="model" required><br>
+
+                            <label for="year">Godina proizvodnje:</label><br>
+                            <input type="number" id="year" name="year" min="1900" max="2099" step="1" required><br>
+
+                            <label for="brand">Marka:</label><br>
+                            <select id="brand" name="brand" required><br>
+                            <option value="">Izaberite marku</option><br>
+                            <option value="BMW">BMW</option>
+                            <option value="Mercedes">Mercedes</option>
+                            <option value="Audi">Audi</option>
+                            <option value="Toyota">Toyota</option>
+                            <option value="Honda">Honda</option>
+                            <option value="Ford">Ford</option>
+                            </select><br>
+
+                            <label for="color">Boja:</label><br>
+                            <input type="text" id="color" name="color" required><br>
+
+                            <label for="price">Cijena po danu:</label><br>
+                            <input type="number" id="price" name="price" min="0" max="10000" step="0.01" required><br>
+
+                            <label for="description">Opis:</label><br>
+                            <textarea id="description" name="description" rows="5"></textarea><br>
+
+                            <button class="btn btn-outline-info fw-bold"><i class="bi bi-search"></i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                  </svg>  Pretrazi</button>
+
+
+
+                          
+                   
+                  </form>
+
+
+            </div>
+            
+        </div>
+    </div>
+</div>
+</body>
+</html>
