@@ -1,13 +1,25 @@
 .head{
     
-    background-image: url("../img/naslovna_3.jpg");
+    background-image: url("../img/naslovna_4.jpg");
     width: 100vw;
     height: 100vh;
     background-attachment: fixed;
     background-position:no-repeat ;
     background-size: cover;
 }
-
+.head a{
+    text-decoration: none;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.head a:hover{
+    background-color: rgb(96, 137, 163);
+    color: white;
+    text-decoration: none;
+}
+.shadow{
+    text-shadow: 20px 24px 17px #ffff;
+}
 .logo{
     margin-right: 20vw;
 }
@@ -60,12 +72,25 @@
     
     font-size: 2rem;
 }
+iframe{
+    border: 1px double rgb(39, 144, 214);
+}
+.bodyContact{
+    background-color: rgb(120, 211, 241);
+}
 @media only screen and(max-width:578px) {
     .kolaSingl{
         width: 350px;
     }
     .containerContact{
         border: none;
+    }
+    .head a{
+        color: #ffff;
+    }
+    .head a:hover{
+        background-color: rgb(38, 128, 212);
+        text-decoration: underline;
     }
     
 }
